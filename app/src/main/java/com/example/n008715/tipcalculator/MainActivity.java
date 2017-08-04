@@ -8,7 +8,6 @@ import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.widget.TextView;
-
 import java.text.NumberFormat;
 
 public class MainActivity extends AppCompatActivity {
