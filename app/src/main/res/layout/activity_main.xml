@@ -62,6 +62,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:elevation="0dp"
+        android:progress="15"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/percentTextView"
         app:layout_constraintRight_toRightOf="@+id/tipTextView"
@@ -76,7 +77,9 @@
         android:layout_marginTop="6dp"
         android:text="@string/tipAmount"
         app:layout_constraintLeft_toLeftOf="@+id/amountEditText"
-        app:layout_constraintTop_toBottomOf="@+id/percentTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/percentTextView"
+        android:layout_marginRight="0dp"
+        app:layout_constraintRight_toRightOf="@+id/totalLabelTextView" />
 
     <TextView
         android:id="@+id/tipTextView"
@@ -88,7 +91,8 @@
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="@+id/amountEditText"
         app:layout_constraintLeft_toRightOf="@+id/tipLabelTextView"
-        android:layout_marginLeft="8dp" />
+        android:layout_marginLeft="8dp"
+        app:layout_constraintHorizontal_bias="0.0" />
 
     <TextView
         android:id="@+id/totalLabelTextView"
@@ -110,9 +114,11 @@
         android:layout_marginRight="8dp"
         android:layout_marginTop="8dp"
         android:text="TextView"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintLeft_toRightOf="@+id/tipLabelTextView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toRightOf="@+id/totalLabelTextView"
         app:layout_constraintRight_toRightOf="@+id/amountEditText"
-        app:layout_constraintTop_toBottomOf="@+id/tipTextView" />
+        app:layout_constraintTop_toBottomOf="@+id/tipTextView"
+        app:layout_constraintBottom_toBottomOf="@+id/totalLabelTextView"
+        android:layout_marginBottom="0dp" />
 
 </android.support.constraint.ConstraintLayout>
