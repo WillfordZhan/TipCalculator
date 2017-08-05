@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         //set amountEditText's TextWatcher
         EditText amountEditText = (EditText) findViewById(R.id.amountEditText);
-        amountEditText.addTextChangedListener(amoutEditTextWatcher);
+        amountEditText.addTextChangedListener(amountEditTextWatcher);
 
         //set percentSeekBar's OnSeekBarChangeListener
         SeekBar percentSeekBar = (SeekBar) findViewById(R.id.percentSeekBar);
@@ -73,9 +73,14 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
-    private final TextWatcher amoutEditTextWatcher = new TextWatcher() {
+    private final TextWatcher amountEditTextWatcher = new TextWatcher() {
         @Override
         public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+        }
+
+        @Override
+        public void onTextChanged(CharSequence s, int start, int before, int count) {
             try {
                 billAmount = Double.parseDouble(s.toString())/100;
                 amountTextView.setText(currencyFormat.format(billAmount));
@@ -85,11 +90,6 @@ public class MainActivity extends AppCompatActivity {
             }
 
             calculate();
-        }
-
-        @Override
-        public void onTextChanged(CharSequence s, int start, int before, int count) {
-
         }
 
         @Override
