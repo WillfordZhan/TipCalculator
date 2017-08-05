@@ -62,7 +62,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:elevation="0dp"
-        android:progress="15"
+        android:max="30"
+        android:progress="15%"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toRightOf="@+id/percentTextView"
         app:layout_constraintRight_toRightOf="@+id/tipTextView"
@@ -101,7 +102,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:contentDescription="@string/TotalAmount"
-        android:text="TextView"
+        android:text="Total"
         app:layout_constraintLeft_toLeftOf="@+id/amountEditText"
         app:layout_constraintTop_toBottomOf="@+id/tipLabelTextView"
         tools:text="@string/totalAmount" />

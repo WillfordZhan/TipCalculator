@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
     private final OnSeekBarChangeListener seekBarListener = new OnSeekBarChangeListener() {
         @Override
         public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-            percent = progress;
+            percent = progress/100;
             calculate();
         }
 
