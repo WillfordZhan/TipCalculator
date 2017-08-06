@@ -3,4 +3,5 @@
     <dimen name="textView_padding">12dp</dimen>
     <dimen name="paddingTop_percent">14dp</dimen>
     <dimen name="elavation">4dp</dimen>
+    <dimen name="littleTextView_padding">6dp</dimen>
 </resources>
